@@ -1,249 +1,492 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Clish Rewards - Privacy Policy & Terms of Use</title>
-<style>
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 40px;
-    line-height: 1.7;
-    color: #222;
-    max-width: 900px;
-}
-h1, h2, h3 {
-    color: #111;
-}
-hr {
-    margin: 50px 0;
-}
-.section {
-    margin-bottom: 50px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clish Rewards - Privacy Policy & Terms of Use</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+            line-height: 1.7;
+            color: #222;
+            max-width: 900px;
+        }
+        h1, h2, h3 {
+            color: #111;
+        }
+        hr {
+            margin: 30px 0;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        
+        /* Estilo do seletor de idiomas */
+        .language-selector {
+            margin: 20px 0 30px;
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .language-btn {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .language-btn:hover {
+            opacity: 0.8;
+        }
+        .language-btn.active {
+            background-color: #2980b9;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .btn-pt {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .btn-en {
+            background-color: #2196F3;
+            color: white;
+        }
+        .btn-zh {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        /* Controle de visibilidade dos idiomas */
+        .lang-pt, .lang-en, .lang-zh {
+            display: none;
+        }
+        .lang-pt.active, .lang-en.active, .lang-zh.active {
+            display: block;
+        }
+        
+        /* Estilo diferenciado para a seção About Us (sempre visível) */
+        .about-us {
+            color: #2980b9;
+            margin-top: 40px;
+            padding: 20px;
+            border: 2px solid #2980b9;
+            border-radius: 10px;
+            background-color: #f8f9fa;
+        }
+        .about-us h2 {
+            color: inherit;
+            margin-top: 0;
+        }
+        .about-us p {
+            margin: 10px 0;
+        }
+        
+        .language-indicator {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+    </style>
 </head>
 <body>
+    <h1>Clish Rewards</h1>
+    <p><strong>Last Updated / Última Atualização / 最后更新:</strong> March 2026</p>
 
-<h1>Clish Rewards</h1>
-<p><strong>App Name:</strong> Clish Rewards</p>
-<p><strong>Developer:</strong> Clishs Android</p>
-<p><strong>Contact:</strong> suporteneorestudio@gmail.com</p>
-<p><strong>Last Updated:</strong> March 2026</p>
+    <!-- SELETOR DE IDIOMAS -->
+    <div class="language-selector">
+        <button class="language-btn btn-en active" onclick="switchLanguage('en')">🇬🇧 English</button>
+        <button class="language-btn btn-pt" onclick="switchLanguage('pt')">🇧🇷 Português</button>
+        <button class="language-btn btn-zh" onclick="switchLanguage('zh')">🇨🇳 简体中文</button>
+    </div>
 
-<hr>
+    <!-- CONTEÚDO EM INGLÊS (padrão) -->
+    <div id="lang-en" class="lang-en active">
+        <div class="language-indicator">Showing content in: English</div>
+        
+        <hr>
+        <div class="section">
+            <h2>Privacy Policy</h2>
+            <p>Clish Rewards ("we", "our", or "the App") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our mobile application.</p>
+            <p>By using the App, you agree to the terms described in this Privacy Policy.</p>
 
-<div class="section">
-<h2>Privacy Policy</h2>
+            <h3>1. Information We Collect</h3>
+            <p>We may collect the following categories of information:</p>
+            <ul>
+                <li>Email address provided during registration</li>
+                <li>Unique User Identifier (UID)</li>
+                <li>App progress and accumulated virtual coins</li>
+                <li>Reward and withdrawal history</li>
+                <li>Advertisement interaction data</li>
+                <li>Device information (device type, OS version, app version)</li>
+                <li>Advertising identifiers</li>
+                <li>Device identifier (Device ID used for security and anti-fraud purposes)</li>
+                <li><strong>Payment information submitted for withdrawal purposes</strong></li>
+            </ul>
+            <p>In order to ensure the proper functionality and security of the application, Clish Rewards may collect a unique device identifier. This identifier helps us recognize the device being used to access the app.</p>
+            <p>The device identifier is used strictly for operational purposes such as preventing abuse of the reward system, detecting fraudulent activity, ensuring fair use of the platform, and maintaining the stability of the service.</p>
+            <p>Collecting a device identifier also helps us avoid multiple account abuse, bot activity, emulator usage, and other behaviors that may compromise the integrity of the rewards system.</p>
+            <p>The device identifier does not grant us access to personal files, contacts, photos, messages, or any private content stored on the user's device.</p>
 
-<p>
-Clish Rewards ("we", "our", or "the App") respects your privacy and is committed to protecting your personal information. 
-This Privacy Policy explains how we collect, use, store, and safeguard your information when you use our mobile application.
-</p>
+            <h3>2. Payment Information</h3>
+            <p>When users reach the minimum withdrawal threshold and request a payout, they may be required to provide payment details. This may include:</p>
+            <ul>
+                <li>PayPal email address</li>
+                <li>Digital wallet information</li>
+                <li>Other payment identifiers required for processing rewards</li>
+            </ul>
+            <p>Payment information is used solely for the purpose of processing withdrawals and preventing fraud. We do not sell or use this information for marketing purposes.</p>
+            <p>Payment data may be processed by third-party payment service providers. We do not store full financial credentials such as passwords or complete banking authentication data.</p>
 
-<p>
-By using the App, you agree to the terms described in this Privacy Policy.
-</p>
+            <h3>3. How We Use Your Information</h3>
+            <ul>
+                <li>Account creation and authentication</li>
+                <li>Tracking coins and rewards</li>
+                <li>Processing withdrawal requests</li>
+                <li>Fraud detection and abuse prevention</li>
+                <li>Providing and optimizing advertisements</li>
+                <li>Compliance with legal obligations</li>
+            </ul>
 
-<h3>1. Information We Collect</h3>
+            <h3>4. Advertising Services</h3>
+            <p>The App provides rewarded advertisements. Users receive virtual coins in exchange for valid ad views. Advertising partners may collect device identifiers and interaction data for analytics and fraud prevention.</p>
 
-<p>We may collect the following categories of information:</p>
+            <h3>5. Data Sharing</h3>
+            <p>We do not sell personal data. Information may be shared only with:</p>
+            <ul>
+                <li>Authentication and database service providers</li>
+                <li>Advertising partners</li>
+                <li>Payment processing providers</li>
+                <li>Legal authorities when required</li>
+            </ul>
 
-<ul>
-<li>Email address provided during registration</li>
-<li>Unique User Identifier (UID)</li>
-<li>App progress and accumulated virtual coins</li>
-<li>Reward and withdrawal history</li>
-<li>Advertisement interaction data</li>
-<li>Device information (device type, OS version, app version)</li>
-<li>Advertising identifiers</li>
-<li>Device identifier (Device ID used for security and anti-fraud purposes)</li>
-<li><strong>Payment information submitted for withdrawal purposes</strong></li>
-</ul>
+            <h3>6. Data Retention</h3>
+            <p>We retain personal data as long as necessary to operate the App and fulfill reward obligations, or as required by law. Users may request account deletion at any time.</p>
 
-<p>
-In order to ensure the proper functionality and security of the application, 
-Clish Rewards may collect a unique device identifier. This identifier helps 
-us recognize the device being used to access the app.
-</p>
+            <h3>7. Security</h3>
+            <p>We implement reasonable security measures to protect user information. However, no system is completely secure. Users are responsible for maintaining the confidentiality of their account credentials.</p>
 
-<p>
-The device identifier is used strictly for operational purposes such as 
-preventing abuse of the reward system, detecting fraudulent activity, 
-ensuring fair use of the platform, and maintaining the stability of the service.
-</p>
+            <h3>8. Children's Privacy</h3>
+            <p>The App is not intended for individuals under 13 years of age.</p>
 
-<p>
-Collecting a device identifier also helps us avoid multiple account abuse, 
-bot activity, emulator usage, and other behaviors that may compromise the 
-integrity of the rewards system.
-</p>
+            <h3>9. Changes to This Policy</h3>
+            <p>We may update this Privacy Policy at any time. Continued use of the App constitutes acceptance of changes.</p>
 
-<p>
-The device identifier does not grant us access to personal files, contacts, 
-photos, messages, or any private content stored on the user's device.
-</p>
+            <h3>10. Contact</h3>
+            <p>For privacy-related requests, contact: <strong>suporteneorestudio@gmail.com</strong></p>
 
-<h3>2. Payment Information</h3>
+            <h3>11. User Rights</h3>
+            <p>Users have the right to:</p>
+            <ul>
+                <li>Access their personal data</li>
+                <li>Request correction of inaccurate data</li>
+                <li>Request deletion of their account and data</li>
+                <li>Withdraw consent where applicable</li>
+            </ul>
+        </div>
 
-<p>
-When users reach the minimum withdrawal threshold and request a payout, they may be required to provide payment details.
-This may include:
-</p>
+        <hr>
 
-<ul>
-<li>PayPal email address</li>
-<li>Digital wallet information</li>
-<li>Other payment identifiers required for processing rewards</li>
-</ul>
+        <div class="section">
+            <h2>Terms of Use</h2>
+            <p>By using Clish Rewards, you agree to comply with the following Terms.</p>
 
-<p>
-Payment information is used solely for the purpose of processing withdrawals and preventing fraud.
-We do not sell or use this information for marketing purposes.
-</p>
+            <h3>1. Reward System</h3>
+            <p>Users earn virtual coins by watching advertisements and completing eligible actions. Coins may be redeemed once the minimum withdrawal threshold is reached.</p>
+            <p>We reserve the right to review and validate all withdrawal requests.</p>
 
-<p>
-Payment data may be processed by third-party payment service providers. 
-We do not store full financial credentials such as passwords or complete banking authentication data.
-</p>
+            <h3>2. Payment Accuracy</h3>
+            <p>Users are responsible for providing accurate and valid payment information. Incorrect payment details may result in delayed or failed payouts. We are not responsible for funds sent to incorrect information provided by the user.</p>
 
-<h3>3. How We Use Your Information</h3>
+            <h3>3. Prohibited Activities</h3>
+            <ul>
+                <li>Use of VPN, proxy, or IP masking services</li>
+                <li>Use of emulators or virtual devices</li>
+                <li>Multiple account creation</li>
+                <li>Automated ad viewing or bots</li>
+                <li>Manipulation of the reward system</li>
+                <li>Fraudulent behavior of any kind</li>
+            </ul>
 
-<ul>
-<li>Account creation and authentication</li>
-<li>Tracking coins and rewards</li>
-<li>Processing withdrawal requests</li>
-<li>Fraud detection and abuse prevention</li>
-<li>Providing and optimizing advertisements</li>
-<li>Compliance with legal obligations</li>
-</ul>
+            <h3>4. Suspension and Termination</h3>
+            <p>Accounts violating these terms may be suspended or permanently banned. All accumulated coins may be forfeited in cases of policy violations.</p>
 
-<h3>4. Advertising Services</h3>
+            <h3>5. Limitation of Liability</h3>
+            <p>Virtual coins have no intrinsic monetary value. We reserve the right to modify reward structures, minimum thresholds, or payout methods at any time.</p>
 
-<p>
-The App provides rewarded advertisements. Users receive virtual coins in exchange for valid ad views.
-Advertising partners may collect device identifiers and interaction data for analytics and fraud prevention.
-</p>
+            <h3>6. Modifications</h3>
+            <p>We may update these Terms at any time. Continued use of the App indicates acceptance of the updated Terms.</p>
+        </div>
+    </div>
 
-<h3>5. Data Sharing</h3>
+    <!-- CONTEÚDO EM PORTUGUÊS -->
+    <div id="lang-pt" class="lang-pt">
+        <div class="language-indicator">Exibindo conteúdo em: Português</div>
+        
+        <hr>
+        <div class="section">
+            <h2>Política de Privacidade</h2>
+            <p>Clish Rewards ("nós", "nosso" ou "o Aplicativo") respeita a sua privacidade e está comprometido em proteger suas informações pessoais. Esta Política de Privacidade explica como coletamos, usamos, armazenamos e protegemos suas informações quando você utiliza nosso aplicativo móvel.</p>
+            <p>Ao usar o Aplicativo, você concorda com os termos descritos nesta Política de Privacidade.</p>
 
-<p>
-We do not sell personal data.
-Information may be shared only with:
-</p>
+            <h3>1. Informações que Coletamos</h3>
+            <p>Podemos coletar as seguintes categorias de informações:</p>
+            <ul>
+                <li>Endereço de e-mail fornecido durante o registro</li>
+                <li>Identificador Único de Usuário (UID)</li>
+                <li>Progresso no aplicativo e moedas virtuais acumuladas</li>
+                <li>Histórico de recompensas e saques</li>
+                <li>Dados de interação com anúncios</li>
+                <li>Informações do dispositivo (tipo de dispositivo, versão do SO, versão do aplicativo)</li>
+                <li>Identificadores de publicidade</li>
+                <li>Identificador do dispositivo (ID do dispositivo usado para fins de segurança e antifraude)</li>
+                <li><strong>Informações de pagamento enviadas para fins de saque</strong></li>
+            </ul>
+            <p>Para garantir a funcionalidade e segurança adequadas do aplicativo, o Clish Rewards pode coletar um identificador único do dispositivo. Esse identificador nos ajuda a reconhecer o dispositivo usado para acessar o aplicativo.</p>
+            <p>O identificador do dispositivo é usado estritamente para fins operacionais, como prevenir abusos do sistema de recompensas, detectar atividades fraudulentas, garantir o uso justo da plataforma e manter a estabilidade do serviço.</p>
+            <p>A coleta de um identificador do dispositivo também nos ajuda a evitar abuso de múltiplas contas, atividade de bots, uso de emuladores e outros comportamentos que possam comprometer a integridade do sistema de recompensas.</p>
+            <p>O identificador do dispositivo não nos concede acesso a arquivos pessoais, contatos, fotos, mensagens ou qualquer conteúdo privado armazenado no dispositivo do usuário.</p>
 
-<ul>
-<li>Authentication and database service providers</li>
-<li>Advertising partners</li>
-<li>Payment processing providers</li>
-<li>Legal authorities when required</li>
-</ul>
+            <h3>2. Informações de Pagamento</h3>
+            <p>Quando os usuários atingem o limite mínimo de saque e solicitam um pagamento, podem ser obrigados a fornecer detalhes de pagamento. Isso pode incluir:</p>
+            <ul>
+                <li>Endereço de e-mail do PayPal</li>
+                <li>Informações de carteira digital</li>
+                <li>Outros identificadores de pagamento necessários para processar recompensas</li>
+            </ul>
+            <p>As informações de pagamento são usadas exclusivamente para processar saques e prevenir fraudes. Não vendemos nem usamos essas informações para fins de marketing.</p>
+            <p>Os dados de pagamento podem ser processados por provedores de serviços de pagamento terceirizados. Não armazenamos credenciais financeiras completas, como senhas ou dados completos de autenticação bancária.</p>
 
-<h3>6. Data Retention</h3>
+            <h3>3. Como Usamos Suas Informações</h3>
+            <ul>
+                <li>Criação e autenticação de conta</li>
+                <li>Acompanhamento de moedas e recompensas</li>
+                <li>Processamento de solicitações de saque</li>
+                <li>Detecção de fraude e prevenção de abusos</li>
+                <li>Fornecimento e otimização de anúncios</li>
+                <li>Cumprimento de obrigações legais</li>
+            </ul>
 
-<p>
-We retain personal data as long as necessary to operate the App and fulfill reward obligations, or as required by law.
-Users may request account deletion at any time.
-</p>
+            <h3>4. Serviços de Publicidade</h3>
+            <p>O Aplicativo oferece anúncios com recompensa. Os usuários recebem moedas virtuais em troca de visualizações válidas de anúncios. Os parceiros de publicidade podem coletar identificadores de dispositivo e dados de interação para análises e prevenção de fraudes.</p>
 
-<h3>7. Security</h3>
+            <h3>5. Compartilhamento de Dados</h3>
+            <p>Não vendemos dados pessoais. As informações podem ser compartilhadas apenas com:</p>
+            <ul>
+                <li>Provedores de serviços de autenticação e banco de dados</li>
+                <li>Parceiros de publicidade</li>
+                <li>Provedores de processamento de pagamentos</li>
+                <li>Autoridades legais quando exigido</li>
+            </ul>
 
-<p>
-We implement reasonable security measures to protect user information. However, no system is completely secure.
-Users are responsible for maintaining the confidentiality of their account credentials.
-</p>
+            <h3>6. Retenção de Dados</h3>
+            <p>Mantemos os dados pessoais pelo tempo necessário para operar o Aplicativo e cumprir as obrigações de recompensa, ou conforme exigido por lei. Os usuários podem solicitar a exclusão da conta a qualquer momento.</p>
 
-<h3>8. Children's Privacy</h3>
+            <h3>7. Segurança</h3>
+            <p>Implementamos medidas de segurança razoáveis para proteger as informações do usuário. No entanto, nenhum sistema é completamente seguro. Os usuários são responsáveis por manter a confidencialidade de suas credenciais de conta.</p>
 
-<p>
-The App is not intended for individuals under 13 years of age.
-</p>
+            <h3>8. Privacidade de Crianças</h3>
+            <p>O Aplicativo não é destinado a indivíduos com menos de 13 anos de idade.</p>
 
-<h3>9. Changes to This Policy</h3>
+            <h3>9. Alterações nesta Política</h3>
+            <p>Podemos atualizar esta Política de Privacidade a qualquer momento. O uso contínuo do Aplicativo constitui aceitação das alterações.</p>
 
-<p>
-We may update this Privacy Policy at any time. Continued use of the App constitutes acceptance of changes.
-</p>
+            <h3>10. Contato</h3>
+            <p>Para solicitações relacionadas à privacidade, entre em contato: <strong>suporteneorestudio@gmail.com</strong></p>
 
-<h3>10. Contact</h3>
+            <h3>11. Direitos do Usuário</h3>
+            <p>Os usuários têm o direito de:</p>
+            <ul>
+                <li>Acessar seus dados pessoais</li>
+                <li>Solicitar correção de dados imprecisos</li>
+                <li>Solicitar exclusão de sua conta e dados</li>
+                <li>Retirar o consentimento quando aplicável</li>
+            </ul>
+        </div>
 
-<p>
-For privacy-related requests, contact: <strong>suporteneorestudio@gmail.com</strong>
-</p>
+        <hr>
 
-<h3>11. User Rights</h3>
-<p>
-Users have the right to:
-</p>
-<ul>
-<li>Access their personal data</li>
-<li>Request correction of inaccurate data</li>
-<li>Request deletion of their account and data</li>
-<li>Withdraw consent where applicable</li>
-</ul>
+        <div class="section">
+            <h2>Termos de Uso</h2>
+            <p>Ao usar o Clish Rewards, você concorda em cumprir os seguintes Termos.</p>
 
-</div>
+            <h3>1. Sistema de Recompensas</h3>
+            <p>Os usuários ganham moedas virtuais assistindo a anúncios e concluindo ações elegíveis. As moedas podem ser resgatadas quando o limite mínimo de saque for atingido.</p>
+            <p>Reservamo-nos o direito de revisar e validar todas as solicitações de saque.</p>
 
-<hr>
+            <h3>2. Precisão do Pagamento</h3>
+            <p>Os usuários são responsáveis por fornecer informações de pagamento precisas e válidas. Detalhes de pagamento incorretos podem resultar em pagamentos atrasados ou malsucedidos. Não somos responsáveis por fundos enviados para informações incorretas fornecidas pelo usuário.</p>
 
-<div class="section">
-<h2>Terms of Use</h2>
+            <h3>3. Atividades Proibidas</h3>
+            <ul>
+                <li>Uso de serviços de VPN, proxy ou mascaramento de IP</li>
+                <li>Uso de emuladores ou dispositivos virtuais</li>
+                <li>Criação de múltiplas contas</li>
+                <li>Visualização automatizada de anúncios ou uso de bots</li>
+                <li>Manipulação do sistema de recompensas</li>
+                <li>Comportamento fraudulento de qualquer tipo</li>
+            </ul>
 
-<p>
-By using Clish Rewards, you agree to comply with the following Terms.
-</p>
+            <h3>4. Suspensão e Rescisão</h3>
+            <p>Contas que violarem estes termos podem ser suspensas ou banidas permanentemente. Todas as moedas acumuladas podem ser perdidas em casos de violações da política.</p>
 
-<h3>1. Reward System</h3>
+            <h3>5. Limitação de Responsabilidade</h3>
+            <p>As moedas virtuais não têm valor monetário intrínseco. Reservamo-nos o direito de modificar as estruturas de recompensa, limites mínimos ou métodos de pagamento a qualquer momento.</p>
 
-<p>
-Users earn virtual coins by watching advertisements and completing eligible actions.
-Coins may be redeemed once the minimum withdrawal threshold is reached.
-</p>
+            <h3>6. Modificações</h3>
+            <p>Podemos atualizar estes Termos a qualquer momento. O uso contínuo do Aplicativo indica aceitação dos Termos atualizados.</p>
+        </div>
+    </div>
 
-<p>
-We reserve the right to review and validate all withdrawal requests.
-</p>
+    <!-- CONTEÚDO EM CHINÊS SIMPLIFICADO -->
+    <div id="lang-zh" class="lang-zh">
+        <div class="language-indicator">正在显示: 简体中文</div>
+        
+        <hr>
+        <div class="section">
+            <h2>隐私政策</h2>
+            <p>Clish Rewards（“我们”、“我们的”或“本应用”）尊重您的隐私，并致力于保护您的个人信息。本隐私政策说明了当您使用我们的移动应用程序时，我们如何收集、使用、存储和保护您的信息。</p>
+            <p>使用本应用即表示您同意本隐私政策中描述的条款。</p>
 
-<h3>2. Payment Accuracy</h3>
+            <h3>1. 我们收集的信息</h3>
+            <p>我们可能收集以下类别的信息：</p>
+            <ul>
+                <li>注册时提供的电子邮件地址</li>
+                <li>唯一用户标识符（UID）</li>
+                <li>应用进度和累积的虚拟硬币</li>
+                <li>奖励和提款历史</li>
+                <li>广告互动数据</li>
+                <li>设备信息（设备类型、操作系统版本、应用版本）</li>
+                <li>广告标识符</li>
+                <li>设备标识符（用于安全和反欺诈目的的设备ID）</li>
+                <li><strong>为提款目的提交的支付信息</strong></li>
+            </ul>
+            <p>为确保应用的正确功能和安全，Clish Rewards可能会收集唯一的设备标识符。此标识符帮助我们识别用于访问应用的设备。</p>
+            <p>设备标识符严格用于操作目的，例如防止奖励系统的滥用、检测欺诈活动、确保平台的公平使用以及维护服务的稳定性。</p>
+            <p>收集设备标识符还有助于我们避免多账户滥用、机器人活动、模拟器使用以及其他可能损害奖励系统完整性的行为。</p>
+            <p>设备标识符不会让我们访问用户的个人文件、联系人、照片、消息或存储在用户设备上的任何私人内容。</p>
 
-<p>
-Users are responsible for providing accurate and valid payment information.
-Incorrect payment details may result in delayed or failed payouts.
-We are not responsible for funds sent to incorrect information provided by the user.
-</p>
+            <h3>2. 支付信息</h3>
+            <p>当用户达到最低提款门槛并请求付款时，他们可能需要提供支付详细信息。这可能包括：</p>
+            <ul>
+                <li>PayPal电子邮件地址</li>
+                <li>数字钱包信息</li>
+                <li>处理奖励所需的其他支付标识符</li>
+            </ul>
+            <p>支付信息仅用于处理提款和防止欺诈。我们不会出售或将这些信息用于营销目的。</p>
+            <p>支付数据可能由第三方支付服务提供商处理。我们不会存储完整的金融凭证，如密码或完整的银行认证数据。</p>
 
-<h3>3. Prohibited Activities</h3>
+            <h3>3. 我们如何使用您的信息</h3>
+            <ul>
+                <li>账户创建和身份验证</li>
+                <li>跟踪硬币和奖励</li>
+                <li>处理提款请求</li>
+                <li>欺诈检测和滥用预防</li>
+                <li>提供和优化广告</li>
+                <li>遵守法律义务</li>
+            </ul>
 
-<ul>
-<li>Use of VPN, proxy, or IP masking services</li>
-<li>Use of emulators or virtual devices</li>
-<li>Multiple account creation</li>
-<li>Automated ad viewing or bots</li>
-<li>Manipulation of the reward system</li>
-<li>Fraudulent behavior of any kind</li>
-</ul>
+            <h3>4. 广告服务</h3>
+            <p>本应用提供有奖励的广告。用户通过有效的广告观看获得虚拟硬币。广告合作伙伴可能会收集设备标识符和互动数据，用于分析和防欺诈。</p>
 
-<h3>4. Suspension and Termination</h3>
+            <h3>5. 数据共享</h3>
+            <p>我们不出售个人数据。信息仅可能与以下方面共享：</p>
+            <ul>
+                <li>身份验证和数据库服务提供商</li>
+                <li>广告合作伙伴</li>
+                <li>支付处理提供商</li>
+                <li>法律要求时的法律当局</li>
+            </ul>
 
-<p>
-Accounts violating these terms may be suspended or permanently banned.
-All accumulated coins may be forfeited in cases of policy violations.
-</p>
+            <h3>6. 数据保留</h3>
+            <p>我们会在运营应用和履行奖励义务所需的时间内，或按法律要求保留个人数据。用户可以随时请求删除账户。</p>
 
-<h3>5. Limitation of Liability</h3>
+            <h3>7. 安全</h3>
+            <p>我们实施合理的安全措施来保护用户信息。然而，没有系统是完全安全的。用户有责任维护其账户凭证的机密性。</p>
 
-<p>
-Virtual coins have no intrinsic monetary value.
-We reserve the right to modify reward structures, minimum thresholds, or payout methods at any time.
-</p>
+            <h3>8. 儿童隐私</h3>
+            <p>本应用不面向13岁以下的个人。</p>
 
-<h3>6. Modifications</h3>
+            <h3>9. 本政策的变更</h3>
+            <p>我们可能随时更新本隐私政策。继续使用本应用即表示接受变更。</p>
 
-<p>
-We may update these Terms at any time. Continued use of the App indicates acceptance of the updated Terms.
-</p>
+            <h3>10. 联系方式</h3>
+            <p>有关隐私的请求，请联系：<strong>suporteneorestudio@gmail.com</strong></p>
 
-</div>
+            <h3>11. 用户权利</h3>
+            <p>用户有权：</p>
+            <ul>
+                <li>访问其个人数据</li>
+                <li>请求更正不准确的数据</li>
+                <li>请求删除其账户和数据</li>
+                <li>在适用情况下撤回同意</li>
+            </ul>
+        </div>
 
+        <hr>
+
+        <div class="section">
+            <h2>使用条款</h2>
+            <p>使用Clish Rewards即表示您同意遵守以下条款。</p>
+
+            <h3>1. 奖励系统</h3>
+            <p>用户通过观看广告和完成符合条件的操作来赚取虚拟硬币。达到最低提款门槛后，硬币可兑换。</p>
+            <p>我们保留审查和验证所有提款请求的权利。</p>
+
+            <h3>2. 支付准确性</h3>
+            <p>用户负责提供准确有效的支付信息。不正确的支付详细信息可能导致延迟或失败的付款。对于因用户提供错误信息而发送的资金，我们概不负责。</p>
+
+            <h3>3. 禁止活动</h3>
+            <ul>
+                <li>使用VPN、代理或IP屏蔽服务</li>
+                <li>使用模拟器或虚拟设备</li>
+                <li>创建多个账户</li>
+                <li>自动观看广告或使用机器人</li>
+                <li>操纵奖励系统</li>
+                <li>任何形式的欺诈行为</li>
+            </ul>
+
+            <h3>4. 暂停和终止</h3>
+            <p>违反这些条款的账户可能会被暂停或永久封禁。如果违反政策，所有累积的硬币可能会被没收。</p>
+
+            <h3>5. 责任限制</h3>
+            <p>虚拟硬币没有内在货币价值。我们保留随时修改奖励结构、最低门槛或付款方式的权利。</p>
+
+            <h3>6. 修改</h3>
+            <p>我们可能随时更新这些条款。继续使用本应用即表示接受更新后的条款。</p>
+        </div>
+    </div>
+
+    <!-- SEÇÃO SOBRE NÓS (About Us) - SEMPRE VISÍVEL E EM AZUL -->
+    <hr>
+    <div class="section about-us">
+        <h2>About Us</h2>
+        <p><strong>App Name:</strong> Clish Rewards</p>
+        <p><strong>Developer:</strong> Patricio Marcos Joaquim</p>
+        <p><strong>Contact:</strong> suporteneorestudio@gmail.com</p>
+    </div>
+
+    <script>
+        function switchLanguage(lang) {
+            // Esconde todos os idiomas
+            document.getElementById('lang-en').classList.remove('active');
+            document.getElementById('lang-pt').classList.remove('active');
+            document.getElementById('lang-zh').classList.remove('active');
+            
+            // Mostra o idioma selecionado
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Atualiza a classe active dos botões
+            document.querySelectorAll('.language-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 </html>
